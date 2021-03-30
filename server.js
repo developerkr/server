@@ -13,12 +13,13 @@ app.use(express.json())
 app.get('/user',(req, res)=>{
     
     res.sendFile(__dirname+'\\src\\index.html')
+
     console.log(__dirname)
 })
 
 app.post('/user', (req,res)=>{
     console.log(req.body)
-    res.send('ok')
+    res.send(`Jo'natildi`)
 })
 
 app.listen(port,(err)=>{
